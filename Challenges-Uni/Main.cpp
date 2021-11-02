@@ -17,19 +17,19 @@ int main()
 			std::cout << "Invalid Input!" << std::endl << std::endl;
 			continue;
 		}
-		if (option == 1) //Keyboard press 2
+		if (option == 1) //Get answer from others
 		{
 			messages.GetAnswer();
 		}
-		else if (option == 2) //Keyboard press 0
+		else if (option == 2) //New Message
 		{
 			messages.SetMessage();
 		}
 		else if (option == 3)
 		{
-			messages.GetMessage();
+			messages.GetMessage(); //See your messages (0 based)
 		}
-		else if (option == 0) //exit press 1
+		else if (option == 0) //exit
 		{
 			done = true;
 		}
